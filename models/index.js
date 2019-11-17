@@ -1,25 +1,6 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+// Exporting an object containing all of our models
 
-var ArticleSchema = new Schema({
-    title: {
-        type: String,
-        required: true
-    },
-    link: {
-        type: String,
-        required: true
-    },
-    saved: {
-        type: Boolean,
-        default: false
-    },
-    notes: [{
-        type: Schema.Types.ObjectId,
-        ref: 'Note'
-    }]
-});
-
-var Article = mongoose.model('Article', ArticleSchema);
-
-module.exports = Article;
+module.exports = {
+    Article: require("./Article"),
+    Note: require("./Note")
+};
