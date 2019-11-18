@@ -1,0 +1,33 @@
+<!--Homepage-->
+{{!-- <div class="container-fluid"> --}}
+    <div class="col-md-12 jumbotron" id="pic">
+        <div class="text-center">
+            <h1>Mongo Scraper</h1>
+            <br>
+            <h3>Bootcamp Edition</h3>
+        </div>
+    </div>
+    <div class="col-md-12" id="artText">
+        {{#if article}}
+            {{#each article}}
+            <div class="panel panel-default">
+                <div class="panel-heading" id="title">
+                    <h4>{{this.title}}
+                    <button type="button" class="btn btn-success save" data-id={{this._id}}>Save Article</button>
+                    </h4>
+                </div>
+                <div class="panel-body">
+                    <p> {{this.summary}}</p>
+                    <a href={{this.link}} target="_blank">{{this.link}}</a>
+                </div>
+            </div>
+            {{/each}}
+        {{else}}
+        <div class="panel panel-default">
+            <div class="panel-body">
+            <h4>Looks like we don't have any new articles.</h4>
+            </div>
+        </div>
+        {{/if}}
+    </div>
+{{!-- </div> --}}

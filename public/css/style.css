@@ -1,0 +1,70 @@
+body {
+    /* background-image: url("/images/newspaper.jpg"); */
+    padding-top: 70px;
+}
+
+.jumbotron{    
+    background-image: url("/images/newspaper.jpg");
+    height:500px;
+    background-size:cover;
+    width:100%;
+}
+
+#artText{
+    background-image: url("/images/back.webp");
+    height:100%;
+    background-size:cover;
+    width:100%;
+}
+
+.deleteNote {
+	display: inline-block;
+}
+
+.previousNotes {
+    display: inline-block;
+    width: 90%
+}
+
+#title{
+    background: rgb(36, 90, 238);
+    color:white;
+
+}
+
+#nav{
+    background:rgb(36, 90, 238);
+}
+
+.navbar-fixed-top{
+    color:white;
+}
+
+#scrape{
+background:red;
+margin-right:10px;
+margin: 8px 0px;
+}
+
+#clear{
+background:red;
+margin: 8px;
+}
+
+#note{
+    background:purple;
+}
+
+#a{
+    color:white;
+}
+
+#a:active {
+    background: rgb(36, 90, 238);
+}
+#a:link {
+    background: rgb(36, 90, 238);;
+}
+#a:visited {
+    background:rgb(36, 90, 238);
+}
